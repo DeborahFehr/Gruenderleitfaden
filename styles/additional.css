@@ -1,0 +1,46 @@
+html{
+    word-break: break-all;
+}
+
+h3.question {
+	margin-bottom: 1em;
+}
+
+input[type="button"].quiz,
+input[type="submit"].quiz,
+input[type="reset"].quiz,
+button.quiz,
+.button.quiz {
+    text-align: left;
+    color: #0e0d0d !important;
+	background: #ded9db;
+    font-weight: 100;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+input[type="button"].quiz:hover,
+input[type="submit"].quiz:hover,
+input[type="reset"].quiz:hover,
+button.quiz:hover,
+.button.quiz:hover {
+	background: #ebe8e9;
+}
+
+input[type="button"].selected,
+input[type="submit"].selected,
+input[type="reset"].selected,
+button.selected,
+.button.selected {
+	background: rgb(218, 203, 208)
+}
+
+input[type="button"].continue,
+input[type="submit"].continue,
+input[type="reset"].continue,
+button.continue,
+.button.continue {
+    text-align: left;
+    margin-top: 1em;
+    max-width: 6em;
+}

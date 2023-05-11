@@ -1,0 +1,60 @@
+{
+    "articles": [
+        {
+            "title": "GbR",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/gbr",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "(Klein-)Gewerbe",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/gewerbe",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "UG",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/ug",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "GmbH",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/gmbh",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "Einzelunternehmer",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/einzelunternehmer",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "OHG",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/ohg",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "KG",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/kg",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        },
+        {
+            "title": "AG",
+            "category": "Firmenform",
+            "link": "/wissen/firmenform/ag",
+            "description": "ToDo",
+            "image": "/images/pic07.jpg"
+        }
+    ]
+}

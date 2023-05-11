@@ -1,7 +1,5 @@
 import ArticleCards from "../../components/blog/article-cards";
-
-const quizzes = [{ title: "Dolore nisl feugiat", link: "/quiz/test", description: "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.", image: "/images/pic07.jpg" },]
-
+import content from "../../content/quizzes.json";
 
 function Quizzes(props) {
 
@@ -13,7 +11,7 @@ function Quizzes(props) {
         subtitle={"Unsere Quizze helfen dir"}
         description={"Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore."}
         overviewtitle={"Hier sind unsere Quizze"}
-        sections={quizzes}
+        sections={content.quizzes}
         download={false}
         />
     );

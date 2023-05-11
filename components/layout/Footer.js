@@ -78,7 +78,8 @@ export default function Footer() {
                     <div className="col-12">
                         <div id="copyright">
                             <ul className="links">
-                                <li>&copy; Gründerleitfaden. 2023.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                                <li>&copy; Gründerleitfaden von recode.law. 2023.</li>
+                                {/* <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> */}
                             </ul>
                         </div>
 

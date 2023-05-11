@@ -1,20 +1,29 @@
+import { useState } from 'react';
+import data from "../../content/quizzes/firmenform.json";
+
 function Quiz(props) {
 
     const { title, link, description, image, category } = props
 
+    const quiz = data.quiz;
+
+    const [id, setId] = useState(0);
+    const [question, setQuestion] = useState(quiz[0].question);
+    const [answers, setAnswers] = useState(quiz[0].answers);
+    const [selected, setSelected] = useState(0);
+
     return (
-        <article class="box post" style={{maxWidth: "750px", margin: "auto"}}>
+        <article class="box post" style={{ maxWidth: "750px", margin: "auto" }}>
             <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
             <header>
-                <h2>Finde deine Rechtsform</h2>
-                <p>Entscheidungshilfe zur Firmenform</p>
+                <h2>{data.title}</h2>
+                <p>{data.description}</p>
             </header>
-                <p> Hier kommt mal ein Quiz hin... 
-                    Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-                    eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-                    elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-                    sit amet nullam consequat feugiat dolore tempus.
-                </p>
+            <h3 className="question">Frage {id}: {question}</h3>
+            {answers.map(answer =>
+                <button className="quiz selected">{answer.text}</button>)
+            }
+            <button className="continue">Weiter</button>
         </article>
     );
 }

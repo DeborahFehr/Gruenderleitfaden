@@ -1,7 +1,5 @@
 import ArticleCards from "../../components/blog/article-cards";
-
-const categories = [{ title: "Firmenform", link: "/wissen/firmenform", description: "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.", image: "/images/pic07.jpg" },]
-
+import content from "../../content/categories.json";
 
 function Knowledge(props) {
 
@@ -13,7 +11,7 @@ function Knowledge(props) {
             subtitle={"Lerne alles über die rechtliche Seite der Gründung"}
             description={"Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore."}
             overviewtitle={"Hier sind unsere Kategorien"}
-            sections={categories}
+            sections={content.categories}
             download={false}/>
     );
 }

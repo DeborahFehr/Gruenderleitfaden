@@ -1,0 +1,10 @@
+{
+    "quizzes": [
+        {
+            "title": "Finde deine Firmenform!",
+            "link": "/quiz/firmenform",
+            "description": "Du möchtest gründen, aber weißt nicht welche Firmenform deine Firma haben soll? Mach unser Quiz und finde es heraus!",
+            "image": "/images/pic07.jpg"
+        }
+    ]
+}

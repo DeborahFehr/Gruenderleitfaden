@@ -1,0 +1,22 @@
+{
+    "title": "Finde deine Rechtsform",
+    "description": "Entscheidungshilfe zur Firmenform",
+    "quiz": [
+        {
+            "id": 1,
+            "question": "Gründest Du alleine, oder seid ihr mehrere Personen?",
+            "answers": [
+                {
+                    "id": 1,
+                    "text": "Alleine",
+                    "follow": 2
+                },
+                {
+                    "id": 1,
+                    "text": "Mehrere",
+                    "follow": 3
+                }
+            ]
+        }
+    ]
+}
