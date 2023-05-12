@@ -1,26 +1,63 @@
 import ArticleCards from "../../../components/blog/article-cards";
-import data from "../../../content/categories.json";
-import subdata from "../../../content/articles.json";
-const quizzes = [{ title: "Dolore nisl feugiat", link: "/wissen/firmenform/gmbh", description: "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.", image: "/images/pic07.jpg" },]
 
+import path from 'path';
+import { promises as fs } from 'fs';
 
 function Overview(props) {
 
-    const { title, link, description, image, category } = props
-
-    const content = data.categories[0];
-    const articles = subdata.articles.filter(i => i.category == "Firmenform"); 
+    const { entry, articles } = props
     
         return (
             <ArticleCards 
-            title={content.title}
-            subtitle={content.subtitle}
-            description={content.content}
-            overviewtitle={"Hier geht es zu den einzelnen Firmenformen"}
+            title={entry.title}
+            subtitle={entry.subtitle}
+            description={entry.content}
+            overviewtitle={entry.overviewtitle}
             sections={articles}
-            link={content.downloadurl}
-            download={content.download}/>
+            link={entry.downloadurl}
+            download={entry.download}/>
         );
     }
     
     export default Overview;
+
+    export async function getStaticPaths() {
+
+        const jsonDirectory = path.join(process.cwd(), 'content');
+        const jsonData = await fs.readFile(jsonDirectory + '/categories.json', 'utf8');
+        const data = JSON.parse(jsonData);
+      
+        const paths = Array.from(data.categories).map((entry) => {
+            return {
+                params: {
+                    category: entry.url
+                }
+            }
+        })
+      
+        return {
+            paths: paths,
+            fallback: false, 
+        }
+      }
+      
+      export async function getStaticProps({ params }) {
+      
+        const jsonDirectory = path.join(process.cwd(), 'content');
+        let jsonData = await fs.readFile(jsonDirectory + '/categories.json', 'utf8');
+        let data = JSON.parse(jsonData);
+      
+        let entry = data.categories.filter(function(item) { return item.url == params.category; });
+
+        jsonData = await fs.readFile(jsonDirectory + '/articles.json', 'utf8');
+        data = JSON.parse(jsonData);
+      
+        let articles = data.articles.filter(function(item) { return item.category == params.category; });
+            
+        return {
+            props: {
+                entry: entry[0],
+                articles: articles
+            },
+        }
+      }

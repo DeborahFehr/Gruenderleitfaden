@@ -1,11 +1,11 @@
 function Sidebar(props) {
 
-    const { title, link, description, image, category } = props
+    const { categories } = props
 
     return (
         <>
-            <section class="box">
-                <a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+            {/* <section class="box">
+                <a href="#" class="image featured"><img src="/images/pic07.jpg" alt="" /></a>
                 <header>
                     <h3>Sed etiam lorem nulla</h3>
                 </header>
@@ -13,20 +13,18 @@ function Sidebar(props) {
                 <footer>
                     <a href="#" class="button alt">Magna sed taciti</a>
                 </footer>
-            </section>
+            </section> */}
             <section class="box">
                 <header>
-                    <h3>Feugiat consequat</h3>
+                    <h3>Mehr zum Thema</h3>
                 </header>
-                <p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
                 <ul class="divided">
-                    <li><a href="#">Sed et blandit consequat sed</a></li>
-                    <li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
-                    <li><a href="#">Sapien id suscipit magna sed felis</a></li>
-                    <li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+                    {categories.map(category =>
+                        <li><a href="#">{category.title}</a></li>)
+                    }
                 </ul>
                 <footer>
-                    <a href="#" class="button alt">Ipsum consequat</a>
+                    <a href="#" class="button alt">Zur Übersicht</a>
                 </footer>
             </section>
         </>

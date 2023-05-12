@@ -1,15 +1,15 @@
 function Article(props) {
 
-    const { title, link, description, image, descHtml } = props
+    const { title, description, image, descHtml } = props
 
     return (
         <article class="box post">
-            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src="/images/pic07.jpg" alt="" /></a>
             <header>
-                <h2>No Sidebar</h2>
-                <p>Lorem ipsum dolor sit amet feugiat</p>
+                <h2>{title}</h2>
+                <p>{description}</p>
             </header>
-            {/* <div dangerouslySetInnerHTML={{ __html: descHtml }}></div> */}
+            <div dangerouslySetInnerHTML={{ __html: descHtml }}></div>
         </article>
     );
 }

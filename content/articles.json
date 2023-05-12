@@ -2,57 +2,65 @@
     "articles": [
         {
             "title": "GbR",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/gbr",
+            "url": "gbr",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "(Klein-)Gewerbe",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/gewerbe",
+            "url": "gewerbe",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "UG",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/ug",
+            "url": "ug",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "GmbH",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/gmbh",
+            "url": "gmbh",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "Einzelunternehmer",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/einzelunternehmer",
+            "url": "einzelunternehmer",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "OHG",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/ohg",
+            "url": "ohg",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "KG",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/kg",
+            "url": "kg",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         },
         {
             "title": "AG",
-            "category": "Firmenform",
+            "category": "firmenform",
             "link": "/wissen/firmenform/ag",
+            "url": "ag",
             "description": "ToDo",
             "image": "/images/pic07.jpg"
         }
