@@ -5,7 +5,7 @@ function Sidebar(props) {
     return (
         <>
             {/* <section class="box">
-                <a href="#" class="image featured"><img src="/images/pic07.jpg" alt="" /></a>
+                <a href="#" class="image featured"><img src="/images/header.jpg" alt="" /></a>
                 <header>
                     <h3>Sed etiam lorem nulla</h3>
                 </header>

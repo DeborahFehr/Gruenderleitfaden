@@ -3,13 +3,13 @@ import Layout from '../components/layout/Layout'
 import BlogCard from '../components/home/BlogCard'
 import PortfolioCard from '../components/home/PortfolioCard'
 
-const blog = [{ title: "Dolore nisl feugiat", link: "wissen/test", description: "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.", image: "/images/pic07.jpg", category: "Firmenform" },
-{ title: "Aptent veroeros aliquam", link: "wissen/test", description: "Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. ", image: "/images/pic07.jpg", category: "Firmenform" }]
+import path from 'path';
+import { promises as fs } from 'fs';
 
-const portfolio = [{ title: "Dolore nisl feugiat", link: "wissen/test", description: "Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.", image: "/images/pic09.jpg" },
-{ title: "Aptent veroeros aliquam", link: "wissen/test", description: "Lorem ipsum dolor sit amet sit veroeros sed et blandit consequat sed veroeros lorem et blandit adipiscing feugiat phasellus tempus hendrerit, tortor vitae mattis tempor, sapien sem feugiat sapien, id suscipit magna felis nec elit. ", image: "/images/pic09.jpg" }]
+export default function Home(props) {
 
-export default function Home() {
+  const { quizzes, categories } = props
+
   return (
     <div className="row">
       <div className="col-12">
@@ -18,14 +18,15 @@ export default function Home() {
             <h2>Wissen</h2>
           </header>
           <div className="row">
-            {blog.map((entry, index) => (
+            {categories.map((entry, index) => (
               <div className="col-6 col-12-small dflex">
                 <BlogCard key={index}
                   title={entry.title}
                   link={entry.link}
                   description={entry.description}
                   image={entry.image}
-                  category={entry.category} />
+                  category={entry.category}
+                  download={entry.download} />
               </div>
             ))}
           </div>
@@ -37,7 +38,7 @@ export default function Home() {
             <h2>Entscheidungshilfen</h2>
           </header>
           <div className="row">
-            {portfolio.map((entry, index) => (
+            {quizzes.map((entry, index) => (
               <div className="col-4 col-6-medium col-12-small dflex">
                 <PortfolioCard key={index}
                   title={entry.title}
@@ -57,4 +58,24 @@ Home.getLayout = function getLayout(page) {
   return (
     <Layout landing={true}>{page}</Layout>
   )
+}
+
+
+export async function getStaticProps({ params }) {
+
+  const jsonDirectory = path.join(process.cwd(), 'content');
+  let jsonData = await fs.readFile(jsonDirectory + '/categories.json', 'utf8');
+  let data = JSON.parse(jsonData);
+  let categories = data.categories;
+
+  jsonData = await fs.readFile(jsonDirectory + '/quizzes.json', 'utf8');
+  data = JSON.parse(jsonData);
+  let quizzes = data.quizzes;
+
+  return {
+    props: {
+      quizzes: quizzes,
+      categories: categories,
+    },
+  }
 }

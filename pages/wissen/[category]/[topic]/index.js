@@ -15,6 +15,7 @@ function Topic(props) {
                 <Article
                     title={entry.title}
                     description={entry.description}
+                    image={entry.image}
                     descHtml={html} />
             </div>
             <div class="col-4 col-12-medium">

@@ -1,6 +1,7 @@
 {
     "title": "Finde deine Rechtsform",
     "description": "Entscheidungshilfe zur Firmenform",
+    "image": "/images/firmenform/quiz.jpg",
     "quiz": [
         {
             "id": 1,

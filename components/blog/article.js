@@ -4,7 +4,7 @@ function Article(props) {
 
     return (
         <article class="box post">
-            <a href="#" class="image featured"><img src="/images/pic07.jpg" alt="" /></a>
+            <a href="#" class="image featured artimage"><img src={image} alt="" /></a>
             <header>
                 <h2>{title}</h2>
                 <p>{description}</p>

@@ -6,7 +6,7 @@
             "link": "/wissen/firmenform/gbr",
             "url": "gbr",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/gbr.jpg"
         },
         {
             "title": "(Klein-)Gewerbe",
@@ -14,7 +14,7 @@
             "link": "/wissen/firmenform/gewerbe",
             "url": "gewerbe",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/gewerbe.jpg"
         },
         {
             "title": "UG",
@@ -22,7 +22,7 @@
             "link": "/wissen/firmenform/ug",
             "url": "ug",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/ug.jpg"
         },
         {
             "title": "GmbH",
@@ -30,7 +30,7 @@
             "link": "/wissen/firmenform/gmbh",
             "url": "gmbh",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/gmbh.jpg"
         },
         {
             "title": "Einzelunternehmer",
@@ -38,7 +38,7 @@
             "link": "/wissen/firmenform/einzelunternehmer",
             "url": "einzelunternehmer",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/einzelunternehmer.jpg"
         },
         {
             "title": "OHG",
@@ -46,7 +46,7 @@
             "link": "/wissen/firmenform/ohg",
             "url": "ohg",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/ohg.jpg"
         },
         {
             "title": "KG",
@@ -54,7 +54,7 @@
             "link": "/wissen/firmenform/kg",
             "url": "kg",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/kg.jpg"
         },
         {
             "title": "AG",
@@ -62,7 +62,7 @@
             "link": "/wissen/firmenform/ag",
             "url": "ag",
             "description": "ToDo",
-            "image": "/images/pic07.jpg"
+            "image": "/images/firmenform/ag.jpg"
         }
     ]
 }

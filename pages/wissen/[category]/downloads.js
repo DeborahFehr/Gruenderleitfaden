@@ -6,7 +6,7 @@ function Downloads(props) {
 
     return (
         <article class="box post">
-            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src={image} alt="" /></a>
             <header>
                 <h2>Unterlagen</h2>
                 <p>Erhalte Dokumente zu deinem Thema</p>

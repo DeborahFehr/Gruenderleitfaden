@@ -44,3 +44,8 @@ button.continue,
     margin-top: 1em;
     max-width: 6em;
 }
+
+.artimage img{
+    max-height: 300px;
+    object-fit: cover;
+}

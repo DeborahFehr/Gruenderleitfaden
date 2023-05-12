@@ -14,7 +14,7 @@ function Quiz(props) {
 
     return (
         <article class="box post" style={{ maxWidth: "750px", margin: "auto" }}>
-            <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+            <a href="#" class="image featured"><img src={image} alt="" /></a>
             <header>
                 <h2>{data.title}</h2>
                 <p>{data.description}</p>
