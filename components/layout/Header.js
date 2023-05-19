@@ -14,7 +14,7 @@ export default function Header(props) {
                     <li><Link href="/">Startseite</Link></li>
                     {/* className="current" */}
                     <li><Link href="/wissen">Wissensdatenbank</Link></li>
-                    <li><Link href="/quiz">Entscheidungshilfen</Link></li>
+                    {/* <li><Link href="/quiz">Entscheidungshilfen</Link></li> */}
                 </ul>
             </nav>
             {props.landing && <>

@@ -5,8 +5,8 @@ function ArticleCards(props) {
     const { title, subtitle, description, overviewtitle, link, image, sections, download } = props
 
     return (
-        <article class="box post">
-            <a href="#" class="image featured"><img src={image} alt="" /></a>
+        <article className="box post">
+            <a href="#" className="image featured"><img src={image} alt="" /></a>
             <header>
                 <h2>{title}</h2>
                 <p>{subtitle}</p>
@@ -18,7 +18,7 @@ function ArticleCards(props) {
                 </header>
                 <div className="row">
                     {sections.map((entry, index) => (
-                        <div className="col-3 col-12-small dflex">
+                        <div className="col-3 col-12-small dflex" key={index}>
                             <PortfolioCard key={index}
                                 title={entry.title}
                                 link={entry.link}

@@ -10,15 +10,15 @@ function Topic(props) {
     const { entry, categories, html } = props
 
     return (
-        <div class="row">
-            <div class="col-8 col-12-medium">
+        <div className="row">
+            <div className="col-8 col-12-medium">
                 <Article
                     title={entry.title}
                     description={entry.description}
                     image={entry.image}
                     descHtml={html} />
             </div>
-            <div class="col-4 col-12-medium">
+            <div className="col-4 col-12-medium">
                 <Sidebar categories={categories} />
             </div>
         </div>

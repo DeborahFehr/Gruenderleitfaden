@@ -32,7 +32,7 @@ export default function Home(props) {
           </div>
         </section>
       </div>
-      <div className="col-12">
+      {/* <div className="col-12">
         <section>
           <header className="major">
             <h2>Entscheidungshilfen</h2>
@@ -49,7 +49,7 @@ export default function Home(props) {
             ))}
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   )
 }

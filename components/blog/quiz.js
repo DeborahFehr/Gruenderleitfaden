@@ -11,19 +11,34 @@ function Quiz(props) {
     const [question, setQuestion] = useState(quiz[0].question);
     const [answers, setAnswers] = useState(quiz[0].answers);
     const [selected, setSelected] = useState(0);
+    const [finished, setFinished] = useState(false);
+
+    function handleContinue() {
+        setSelected(0);
+        setId(id + 1);
+        setQuestion(id);
+        setAnswers(quiz[id].answers);
+    }
+
+    function handleSelection(id) {
+        setSelected(id);
+    }
 
     return (
-        <article class="box post" style={{ maxWidth: "750px", margin: "auto" }}>
-            <a href="#" class="image featured"><img src={image} alt="" /></a>
+        <article className="box post" style={{ maxWidth: "750px", margin: "auto" }}>
+            <a href="#" className="image featured"><img src={image} alt="" /></a>
             <header>
                 <h2>{data.title}</h2>
                 <p>{data.description}</p>
             </header>
-            <h3 className="question">Frage {id}: {question}</h3>
+            <h3 className="question">Frage {id + 1}: {question}</h3>
             {answers.map(answer =>
-                <button className="quiz selected">{answer.text}</button>)
+                <button className={"quiz " + (selected == answer.id ? "selected" : "")}
+                    onClick={handleSelection.bind(this, answer.id)}>
+                    {answer.text}
+                </button>)
             }
-            <button className="continue">Weiter</button>
+            <button className="continue" onClick={handleContinue.bind(this)}>Weiter</button>
         </article>
     );
 }

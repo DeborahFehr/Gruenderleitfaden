@@ -1,5 +1,5 @@
 html{
-    word-break: break-all;
+    word-break: break-word;
 }
 
 h3.question {
@@ -42,7 +42,7 @@ button.continue,
 .button.continue {
     text-align: left;
     margin-top: 1em;
-    max-width: 6em;
+    max-width: fit-content;
 }
 
 .artimage img{

@@ -5,7 +5,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/gbr",
             "url": "gbr",
-            "description": "ToDo",
+            "description": "Die GbR ist eine Rechtsform, bei der Gesellschafter unbeschränkt haften und das Unternehmen gemeinsam führen.",
             "image": "/images/firmenform/gbr.jpg"
         },
         {
@@ -13,7 +13,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/gewerbe",
             "url": "gewerbe",
-            "description": "ToDo",
+            "description": "Kleingewerbe sind Unternehmen mit geringen Umsätzen und wenigen Mitarbeitern, die sich wie andere Gewerbetreibende anmelden müssen.",
             "image": "/images/firmenform/gewerbe.jpg"
         },
         {
@@ -21,7 +21,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/ug",
             "url": "ug",
-            "description": "ToDo",
+            "description": "Die UG ist eine Rechtsform für kleine Unternehmen mit geringem Mindestkapital, beschränkter Haftung und Umwandlungsoption in eine GmbH.",
             "image": "/images/firmenform/ug.jpg"
         },
         {
@@ -29,7 +29,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/gmbh",
             "url": "gmbh",
-            "description": "ToDo",
+            "description": "Die GmbH ist eine Rechtsform, bei der der Gesellschafter nur mit seinem Gesellschaftsanteil haftet, nicht mit seinem privaten Vermögen.",
             "image": "/images/firmenform/gmbh.jpg"
         },
         {
@@ -37,7 +37,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/einzelunternehmer",
             "url": "einzelunternehmer",
-            "description": "ToDo",
+            "description": "Ein Einzelunternehmer führt allein ein Unternehmen, hat die volle Kontrolle und kann flexibel agieren, trägt aber auch das Risiko allein.",
             "image": "/images/firmenform/einzelunternehmer.jpg"
         },
         {
@@ -45,7 +45,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/ohg",
             "url": "ohg",
-            "description": "ToDo",
+            "description": "Die OHG ist eine Rechtsform, bei der alle Gesellschafter unbeschränkt haften und das Unternehmen führen können.",
             "image": "/images/firmenform/ohg.jpg"
         },
         {
@@ -53,7 +53,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/kg",
             "url": "kg",
-            "description": "ToDo",
+            "description": "Die KG ist eine Rechtsform mit haftungsbeschränkten Kommanditisten und unbeschränkt haftenden Komplementären.",
             "image": "/images/firmenform/kg.jpg"
         },
         {
@@ -61,7 +61,7 @@
             "category": "firmenform",
             "link": "/wissen/firmenform/ag",
             "url": "ag",
-            "description": "ToDo",
+            "description": "Die AG ist eine Rechtsform, bei der Aktionäre nur mit ihrem Aktienkapital haften und ein Mindestkapital von 50.000 Euro erforderlich ist.",
             "image": "/images/firmenform/ag.jpg"
         }
     ]

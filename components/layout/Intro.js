@@ -35,7 +35,7 @@ function Intro(props) {
             <footer>
                 <ul className="actions">
                     <li><Link href="/wissen" className="button large">Zur Wissensdatenbank</Link></li>
-                    <li><Link href="/quiz" className="button alt large">Zu den Entscheidungshilfen</Link></li>
+                    {/* <li><Link href="/quiz" className="button alt large">Zu den Entscheidungshilfen</Link></li> */}
                 </ul>
             </footer>
         </section>
